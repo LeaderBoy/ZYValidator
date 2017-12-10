@@ -26,15 +26,14 @@
 		5243CAB91FDD191C00B35C81 /* ZYInputURLValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5243CAB81FDD191C00B35C81 /* ZYInputURLValidator.m */; };
 		5243CABC1FDD196800B35C81 /* ZYInputCarNumberValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5243CABB1FDD196800B35C81 /* ZYInputCarNumberValidator.m */; };
 		5243CABF1FDD1A2800B35C81 /* ZYInputUserNameValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5243CABE1FDD1A2800B35C81 /* ZYInputUserNameValidator.m */; };
-		5243CAC91FDD1C2100B35C81 /* URLValidatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5243CAC01FDD1C2000B35C81 /* URLValidatorTest.m */; };
 		5243CACA1FDD1C2100B35C81 /* IDCardValidatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5243CAC11FDD1C2100B35C81 /* IDCardValidatorTest.m */; };
 		5243CACB1FDD1C2100B35C81 /* PostCodeValidatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5243CAC21FDD1C2100B35C81 /* PostCodeValidatorTest.m */; };
-		5243CACC1FDD1C2100B35C81 /* PhoneNumberValidatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5243CAC31FDD1C2100B35C81 /* PhoneNumberValidatorTest.m */; };
 		5243CACD1FDD1C2100B35C81 /* EmailValitorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5243CAC41FDD1C2100B35C81 /* EmailValitorTest.m */; };
-		5243CACE1FDD1C2100B35C81 /* DateValidatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5243CAC51FDD1C2100B35C81 /* DateValidatorTest.m */; };
-		5243CACF1FDD1C2100B35C81 /* UserNameValidatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5243CAC61FDD1C2100B35C81 /* UserNameValidatorTest.m */; };
-		5243CAD01FDD1C2100B35C81 /* CarNumberValidatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5243CAC71FDD1C2100B35C81 /* CarNumberValidatorTest.m */; };
 		5243CAD11FDD1C2100B35C81 /* PasswordValidatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5243CAC81FDD1C2100B35C81 /* PasswordValidatorTest.m */; };
+		5243CAD51FDD2B2400B35C81 /* CarNumberValidatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5243CAD41FDD2B2400B35C81 /* CarNumberValidatorTest.m */; };
+		5243CAD71FDD2B3D00B35C81 /* DateValidatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5243CAD61FDD2B3D00B35C81 /* DateValidatorTest.m */; };
+		5243CAD91FDD2B4C00B35C81 /* PhoneNumberValidatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5243CAD81FDD2B4C00B35C81 /* PhoneNumberValidatorTest.m */; };
+		5243CADB1FDD2B5700B35C81 /* URLValidatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5243CADA1FDD2B5700B35C81 /* URLValidatorTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,15 +92,14 @@
 		5243CABB1FDD196800B35C81 /* ZYInputCarNumberValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYInputCarNumberValidator.m; sourceTree = "<group>"; };
 		5243CABD1FDD1A2800B35C81 /* ZYInputUserNameValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYInputUserNameValidator.h; sourceTree = "<group>"; };
 		5243CABE1FDD1A2800B35C81 /* ZYInputUserNameValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYInputUserNameValidator.m; sourceTree = "<group>"; };
-		5243CAC01FDD1C2000B35C81 /* URLValidatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLValidatorTest.m; sourceTree = "<group>"; };
 		5243CAC11FDD1C2100B35C81 /* IDCardValidatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDCardValidatorTest.m; sourceTree = "<group>"; };
 		5243CAC21FDD1C2100B35C81 /* PostCodeValidatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostCodeValidatorTest.m; sourceTree = "<group>"; };
-		5243CAC31FDD1C2100B35C81 /* PhoneNumberValidatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneNumberValidatorTest.m; sourceTree = "<group>"; };
 		5243CAC41FDD1C2100B35C81 /* EmailValitorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailValitorTest.m; sourceTree = "<group>"; };
-		5243CAC51FDD1C2100B35C81 /* DateValidatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateValidatorTest.m; sourceTree = "<group>"; };
-		5243CAC61FDD1C2100B35C81 /* UserNameValidatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserNameValidatorTest.m; sourceTree = "<group>"; };
-		5243CAC71FDD1C2100B35C81 /* CarNumberValidatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarNumberValidatorTest.m; sourceTree = "<group>"; };
 		5243CAC81FDD1C2100B35C81 /* PasswordValidatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordValidatorTest.m; sourceTree = "<group>"; };
+		5243CAD41FDD2B2400B35C81 /* CarNumberValidatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarNumberValidatorTest.m; sourceTree = "<group>"; };
+		5243CAD61FDD2B3D00B35C81 /* DateValidatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateValidatorTest.m; sourceTree = "<group>"; };
+		5243CAD81FDD2B4C00B35C81 /* PhoneNumberValidatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneNumberValidatorTest.m; sourceTree = "<group>"; };
+		5243CADA1FDD2B5700B35C81 /* URLValidatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLValidatorTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,15 +167,14 @@
 		5243CA841FDD169900B35C81 /* ZYValidatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				5243CAC71FDD1C2100B35C81 /* CarNumberValidatorTest.m */,
-				5243CAC51FDD1C2100B35C81 /* DateValidatorTest.m */,
+				5243CAD61FDD2B3D00B35C81 /* DateValidatorTest.m */,
+				5243CAD41FDD2B2400B35C81 /* CarNumberValidatorTest.m */,
 				5243CAC41FDD1C2100B35C81 /* EmailValitorTest.m */,
+				5243CAD81FDD2B4C00B35C81 /* PhoneNumberValidatorTest.m */,
+				5243CADA1FDD2B5700B35C81 /* URLValidatorTest.m */,
 				5243CAC11FDD1C2100B35C81 /* IDCardValidatorTest.m */,
 				5243CAC81FDD1C2100B35C81 /* PasswordValidatorTest.m */,
-				5243CAC31FDD1C2100B35C81 /* PhoneNumberValidatorTest.m */,
 				5243CAC21FDD1C2100B35C81 /* PostCodeValidatorTest.m */,
-				5243CAC01FDD1C2000B35C81 /* URLValidatorTest.m */,
-				5243CAC61FDD1C2100B35C81 /* UserNameValidatorTest.m */,
 				5243CA851FDD169900B35C81 /* ZYValidatorTests.m */,
 				5243CA871FDD169900B35C81 /* Info.plist */,
 			);
@@ -376,15 +373,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5243CACF1FDD1C2100B35C81 /* UserNameValidatorTest.m in Sources */,
+				5243CAD51FDD2B2400B35C81 /* CarNumberValidatorTest.m in Sources */,
+				5243CAD71FDD2B3D00B35C81 /* DateValidatorTest.m in Sources */,
+				5243CADB1FDD2B5700B35C81 /* URLValidatorTest.m in Sources */,
 				5243CACD1FDD1C2100B35C81 /* EmailValitorTest.m in Sources */,
-				5243CACE1FDD1C2100B35C81 /* DateValidatorTest.m in Sources */,
 				5243CAD11FDD1C2100B35C81 /* PasswordValidatorTest.m in Sources */,
-				5243CACC1FDD1C2100B35C81 /* PhoneNumberValidatorTest.m in Sources */,
-				5243CAC91FDD1C2100B35C81 /* URLValidatorTest.m in Sources */,
 				5243CACB1FDD1C2100B35C81 /* PostCodeValidatorTest.m in Sources */,
-				5243CAD01FDD1C2100B35C81 /* CarNumberValidatorTest.m in Sources */,
 				5243CA861FDD169900B35C81 /* ZYValidatorTests.m in Sources */,
+				5243CAD91FDD2B4C00B35C81 /* PhoneNumberValidatorTest.m in Sources */,
 				5243CACA1FDD1C2100B35C81 /* IDCardValidatorTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
