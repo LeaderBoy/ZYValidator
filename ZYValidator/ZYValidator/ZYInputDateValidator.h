@@ -7,12 +7,21 @@
 //
 
 #import "ZYInputValidator.h"
-typedef NS_ENUM(NSUInteger, DateValidatorType) {
-    DateValidatorTypeDefault,//2012-12-12
-    DateValidatorType1,//2012/12/12
-    DateValidatorType2 //12/12/2012
+
+
+/**
+ 日期验证
+
+ - ZYInputDateValidatorTypeDefault: 2012-12-12
+ - ZYInputDateValidatorType1: 2012/12/12
+ - ZYInputDateValidatorType2: 12/12/2012
+ */
+typedef NS_ENUM(NSUInteger, ZYInputDateValidatorType) {
+    ZYInputDateValidatorTypeDefault,
+    ZYInputDateValidatorType1,
+    ZYInputDateValidatorType2
 };
 @interface ZYInputDateValidator : ZYInputValidator
--(instancetype)initWithDateType:(DateValidatorType)type;
+-(instancetype)initWithDateType:(ZYInputDateValidatorType)type;
 
 @end

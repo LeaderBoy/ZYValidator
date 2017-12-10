@@ -19,12 +19,12 @@ static NSString *const kDateValidatorType2 = @"(((0[1-9]|[12][0-9]|3[01])/((0[13
 
 
 @interface ZYInputDateValidator()
-@property(nonatomic,assign)DateValidatorType validatorType;
+@property(nonatomic,assign)ZYInputDateValidatorType validatorType;
 @end
 
 @implementation ZYInputDateValidator
 
--(instancetype)initWithDateType:(DateValidatorType)type {
+-(instancetype)initWithDateType:(ZYInputDateValidatorType)type {
     self = [super init];
     if (self) {
         self.validatorType = type;
@@ -64,15 +64,15 @@ static NSString *const kDateValidatorType2 = @"(((0[1-9]|[12][0-9]|3[01])/((0[13
     }
 }
 
--(NSString *)handleValidatorType:(DateValidatorType)type {
+-(NSString *)handleValidatorType:(ZYInputDateValidatorType)type {
     switch (type) {
-        case DateValidatorTypeDefault:
+        case ZYInputDateValidatorTypeDefault:
             return kDateValidatorDefault;
             break;
-        case DateValidatorType1:
+        case ZYInputDateValidatorType1:
             return kDateValidatorType1;
             break;
-        case DateValidatorType2:
+        case ZYInputDateValidatorType2:
             return kDateValidatorDefault;
             break;
     }

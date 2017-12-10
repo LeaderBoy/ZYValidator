@@ -19,7 +19,7 @@
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 -(void)testDate {
-    UITextField *date= [[UITextField alloc]initWithValidatorType:ZYInputValidatorTypeDate];
+UITextField *date= [[UITextField alloc]initWithValidatorType:ZYInputValidatorTypeDate];
     // false
     XCTAssertFalse([self validateWith:date]);
     date.text = @"";

@@ -18,8 +18,8 @@
     [super setUp];
 }
 
--(void)testPasswordValidatorTypeDefault {
-    UITextField *password = [[UITextField alloc]initWithPasswordType:PasswordValidatorTypeDefault];
+-(void)testZYInputPasswordValidatorTypeDefault {
+    UITextField *password = [[UITextField alloc]initWithPasswordType:ZYInputPasswordValidatorTypeDefault];
 // false
     // 少于8位的
     XCTAssertFalse([self validateWith:password]);
@@ -59,8 +59,8 @@
 }
 
 //中：纯字母，纯字符，纯数字
--(void)testPasswordValidatorTypeIntensityLow {
-    UITextField *password = [[UITextField alloc]initWithPasswordType:PasswordValidatorTypeIntensityLow];
+-(void)testZYInputPasswordValidatorTypeIntensityLow {
+    UITextField *password = [[UITextField alloc]initWithPasswordType:ZYInputPasswordValidatorTypeIntensityLow];
 // false
     XCTAssertFalse([self validateWith:password]);
     // 空
@@ -92,8 +92,8 @@
 }
 
 //中：字母+数字，字母+特殊字符，数字+特殊字符
--(void)testPasswordValidatorTypeIntensityMid {
-    UITextField *password = [[UITextField alloc]initWithPasswordType:PasswordValidatorTypeIntensityMid];
+-(void)testZYInputPasswordValidatorTypeIntensityMid {
+    UITextField *password = [[UITextField alloc]initWithPasswordType:ZYInputPasswordValidatorTypeIntensityMid];
     // false
     XCTAssertFalse([self validateWith:password]);
     // 空
@@ -125,8 +125,8 @@
 }
 
 // 强:由字母+数字+特殊字符组成
--(void)testPasswordValidatorTypeIntensityHigh {
-    UITextField *password = [[UITextField alloc]initWithPasswordType:PasswordValidatorTypeIntensityHigh];
+-(void)testZYInputPasswordValidatorTypeIntensityHigh {
+    UITextField *password = [[UITextField alloc]initWithPasswordType:ZYInputPasswordValidatorTypeIntensityHigh];
     // false
     XCTAssertFalse([self validateWith:password]);
     // 空
@@ -164,8 +164,8 @@
 }
 //至少一个 大写字母 一个小写字母 一个数字 其他为任意字符 8-20位
 
--(void)testPasswordValidatorType1 {
-    UITextField *password = [[UITextField alloc]initWithPasswordType:PasswordValidatorType1];
+-(void)testZYInputPasswordValidatorType1 {
+    UITextField *password = [[UITextField alloc]initWithPasswordType:ZYInputPasswordValidatorType1];
 // false
     XCTAssertFalse([self validateWith:password]);
     // 空
@@ -222,8 +222,8 @@
     XCTAssertTrue([self validateWith:password]);
 }
 
--(void)testPasswordValidatorType2 {
-    UITextField *password = [[UITextField alloc]initWithPasswordType:PasswordValidatorType2];
+-(void)testZYInputPasswordValidatorType2 {
+    UITextField *password = [[UITextField alloc]initWithPasswordType:ZYInputPasswordValidatorType2];
     // false
     XCTAssertFalse([self validateWith:password]);
     // 空
@@ -274,8 +274,8 @@
     XCTAssertTrue([self validateWith:password]);
 }
 // 数字 字母组成 8-20位
--(void)testPasswordValidatorType3 {
-    UITextField *password = [[UITextField alloc]initWithPasswordType:PasswordValidatorType3];
+-(void)testZYInputPasswordValidatorType3 {
+    UITextField *password = [[UITextField alloc]initWithPasswordType:ZYInputPasswordValidatorType3];
     // false
     XCTAssertFalse([self validateWith:password]);
     // 空
@@ -311,7 +311,7 @@
 
 -(void)testZYInputValidatorOptionsIntensityLow {
     
-    UITextField *password = [[UITextField alloc]initWithPasswordType:PasswordValidatorTypeIntensityHigh];
+    UITextField *password = [[UITextField alloc]initWithPasswordType:ZYInputPasswordValidatorTypeIntensityHigh];
     ZYInputValidatorOptions options = ZYInputValidatorOptionsIntensityLow;
 
     // false
@@ -347,7 +347,7 @@
 
 -(void)testZYInputValidatorOptionsIntensityMid {
     
-    UITextField *password = [[UITextField alloc]initWithPasswordType:PasswordValidatorTypeIntensityHigh];
+    UITextField *password = [[UITextField alloc]initWithPasswordType:ZYInputPasswordValidatorTypeIntensityHigh];
     
     ZYInputValidatorOptions options = ZYInputValidatorOptionsIntensityMid;
 
@@ -381,7 +381,7 @@
 
 -(void)testZYInputValidatorOptionsIntensityHigh {
     
-    UITextField *password = [[UITextField alloc]initWithPasswordType:PasswordValidatorTypeIntensityHigh];
+    UITextField *password = [[UITextField alloc]initWithPasswordType:ZYInputPasswordValidatorTypeIntensityHigh];
     ZYInputValidatorOptions options = ZYInputValidatorOptionsIntensityHigh;
 
     // false
@@ -412,7 +412,7 @@
 
 -(void)testZYInputValidatorOptionsNotAllNumbers {
     
-    UITextField *password = [[UITextField alloc]initWithPasswordType:PasswordValidatorTypeIntensityHigh];
+    UITextField *password = [[UITextField alloc]initWithPasswordType:ZYInputPasswordValidatorTypeIntensityHigh];
     
     ZYInputValidatorOptions options = ZYInputValidatorOptionsNotAllNumbers;
     // false
@@ -441,7 +441,7 @@
 
 -(void)testZYInputValidatorOptionsNotAllLetters {
     
-    UITextField *password = [[UITextField alloc]initWithPasswordType:PasswordValidatorTypeIntensityHigh];
+    UITextField *password = [[UITextField alloc]initWithPasswordType:ZYInputPasswordValidatorTypeIntensityHigh];
     
     ZYInputValidatorOptions options = ZYInputValidatorOptionsNotAllLetters;
     // false
@@ -467,7 +467,7 @@
 
 -(void)testZYInputValidatorOptionsNotAllSymbols {
     
-    UITextField *password = [[UITextField alloc]initWithPasswordType:PasswordValidatorTypeIntensityHigh];
+    UITextField *password = [[UITextField alloc]initWithPasswordType:ZYInputPasswordValidatorTypeIntensityHigh];
     
     ZYInputValidatorOptions options = ZYInputValidatorOptionsNotAllSymbols;
     // false
@@ -492,7 +492,7 @@
 }
 
 -(void)testZYInputValidatorOptionsNotAllChinese {
-    UITextField *password = [[UITextField alloc]initWithPasswordType:PasswordValidatorTypeIntensityHigh];
+    UITextField *password = [[UITextField alloc]initWithPasswordType:ZYInputPasswordValidatorTypeIntensityHigh];
     ZYInputValidatorOptions options = ZYInputValidatorOptionsNotAllChinese;
     // false
     XCTAssertFalse([self validateWith:password options:options]);
@@ -516,7 +516,7 @@
 
 -(void)testZYInputValidatorOptionsAllNumbers {
     
-    UITextField *password = [[UITextField alloc]initWithPasswordType:PasswordValidatorTypeIntensityHigh];
+    UITextField *password = [[UITextField alloc]initWithPasswordType:ZYInputPasswordValidatorTypeIntensityHigh];
     
     ZYInputValidatorOptions options = ZYInputValidatorOptionsAllNumbers;
     // false
@@ -543,7 +543,7 @@
 
 -(void)testZYInputValidatorOptionsAllLetters {
     
-    UITextField *password = [[UITextField alloc]initWithPasswordType:PasswordValidatorTypeIntensityHigh];
+    UITextField *password = [[UITextField alloc]initWithPasswordType:ZYInputPasswordValidatorTypeIntensityHigh];
     
     ZYInputValidatorOptions options = ZYInputValidatorOptionsAllLetters;
     // false
@@ -566,7 +566,7 @@
 }
 -(void)testZYInputValidatorOptionsAllSymbols {
     
-    UITextField *password = [[UITextField alloc]initWithPasswordType:PasswordValidatorTypeIntensityHigh];
+    UITextField *password = [[UITextField alloc]initWithPasswordType:ZYInputPasswordValidatorTypeIntensityHigh];
     ZYInputValidatorOptions options = ZYInputValidatorOptionsAllSymbols;
     //false
     password.text = @"1234";
@@ -585,7 +585,7 @@
 }
 
 -(void)testZYInputValidatorOptionsAllChinese {
-    UITextField *password = [[UITextField alloc]initWithPasswordType:PasswordValidatorTypeIntensityHigh];
+    UITextField *password = [[UITextField alloc]initWithPasswordType:ZYInputPasswordValidatorTypeIntensityHigh];
     ZYInputValidatorOptions options = ZYInputValidatorOptionsAllChinese;
     // false
     XCTAssertFalse([self validateWith:password options:options]);
@@ -609,7 +609,7 @@
 
 -(void)testZYInputValidatorOptionsUppercaseAtLeast {
     
-    UITextField *password = [[UITextField alloc]initWithPasswordType:PasswordValidatorTypeIntensityHigh];
+UITextField *password = [[UITextField alloc]initWithPasswordType:ZYInputPasswordValidatorTypeIntensityHigh];
     ZYInputValidatorOptions options = ZYInputValidatorOptionsUppercaseAtLeast;
     //false
     // 空
@@ -640,7 +640,7 @@
 
 -(void)testZYInputValidatorOptionsLowercaseAtLeast {
     
-    UITextField *password = [[UITextField alloc]initWithPasswordType:PasswordValidatorTypeIntensityHigh];
+    UITextField *password = [[UITextField alloc]initWithPasswordType:ZYInputPasswordValidatorTypeIntensityHigh];
     ZYInputValidatorOptions options = ZYInputValidatorOptionsLowercaseAtLeast;
     //false
     // 空
@@ -671,7 +671,7 @@
 
 -(void)testZYInputValidatorOptionsNumberAtLeast {
     
-    UITextField *password = [[UITextField alloc]initWithPasswordType:PasswordValidatorTypeIntensityHigh];
+    UITextField *password = [[UITextField alloc]initWithPasswordType:ZYInputPasswordValidatorTypeIntensityHigh];
     ZYInputValidatorOptions options = ZYInputValidatorOptionsNumberAtLeast;
     //false
     // 空

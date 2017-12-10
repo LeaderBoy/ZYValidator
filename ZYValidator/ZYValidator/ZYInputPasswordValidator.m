@@ -25,28 +25,19 @@ static NSString *const kPasswordValidatorType3 = @"^(?![0-9]+$)(?![a-zA-Z]+$)[0-
 
 @interface ZYInputPasswordValidator()
 @property(nonatomic,assign)ZYInputValidatorOptions validatorOptions;
-@property(nonatomic,assign)PasswordValidatorType validatorType;
+@property(nonatomic,assign)ZYInputPasswordValidatorType validatorType;
 @end
 @implementation ZYInputPasswordValidator
 
 //http://www.css88.com/archives/8100
 
--(instancetype)initWithPasswordType:(PasswordValidatorType)type {
+-(instancetype)initWithPasswordType:(ZYInputPasswordValidatorType)type {
     self = [super init];
     if (self) {
         self.validatorType = type;
     }
     return self;
 }
-
-
-
-//大概介绍一下：
-//密码字符包括：小写字母、大写字母、数字、符号等；
-//这个正则会得到五个捕获组，前四个捕获组会告诉我们这个字符串包含有多少种组合（返回多少个匹配代表多少种组合）
-//如果这个字符串小于6位的话,则会得到第五个捕获组,长度为1（即强度为1），如果没有输入，就连捕获组5都不会得到（强度为0）
-// "^(?:([a-z])|([A-Z])|([0-9])|(.)){6,}|(.)+$"
-
 
 -(BOOL)validateInput:(UITextField *)input error:(NSError *__autoreleasing*)error {
     if (input.text.length <= 0) {
@@ -71,27 +62,27 @@ static NSString *const kPasswordValidatorType3 = @"^(?![0-9]+$)(?![a-zA-Z]+$)[0-
     }
 }
 
--(NSString *)handleValidatorType:(PasswordValidatorType)type {
+-(NSString *)handleValidatorType:(ZYInputPasswordValidatorType)type {
     switch (type) {
-        case PasswordValidatorTypeDefault:
+        case ZYInputPasswordValidatorTypeDefault:
             return kPasswordValidatorTypeDefault;
             break;
-        case PasswordValidatorTypeIntensityLow:
+        case ZYInputPasswordValidatorTypeIntensityLow:
             return kPasswordValidatorTypeIntensityLow;
             break;
-        case PasswordValidatorTypeIntensityMid:
+        case ZYInputPasswordValidatorTypeIntensityMid:
             return kPasswordValidatorTypeIntensityMid;
             break;
-        case PasswordValidatorTypeIntensityHigh:
+        case ZYInputPasswordValidatorTypeIntensityHigh:
             return kPasswordValidatorTypeIntensityHigh;
             break;
-        case PasswordValidatorType1:
+        case ZYInputPasswordValidatorType1:
             return kPasswordValidatorType1;
             break;
-        case PasswordValidatorType2:
+        case ZYInputPasswordValidatorType2:
             return kPasswordValidatorType2;
             break;
-        case PasswordValidatorType3:
+        case ZYInputPasswordValidatorType3:
             return kPasswordValidatorType3;
             break;
     }

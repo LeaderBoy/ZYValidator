@@ -36,7 +36,7 @@ static NSString *validatorKey = @"validatorKey";
     return self;
 }
 
--(instancetype)initWithPasswordType:(PasswordValidatorType)type {
+-(instancetype)initWithPasswordType:(ZYInputPasswordValidatorType)type {
     if (self = [super init]) {
         ZYInputPasswordValidator *validator = [[ZYInputPasswordValidator alloc]initWithPasswordType:type];
         self.validator = validator;
@@ -44,7 +44,7 @@ static NSString *validatorKey = @"validatorKey";
     return self;
 }
 
--(instancetype)initWithDateType:(DateValidatorType)type {
+-(instancetype)initWithDateType:(ZYInputDateValidatorType)type {
     if (self = [super init]) {
         ZYInputDateValidator *validator = [[ZYInputDateValidator alloc]initWithDateType:type];
         self.validator = validator;

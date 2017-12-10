@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param type 密码的验证类型 比如:PasswordValidatorType3代表 数字 字母 组合 8-20位
  @return self
  */
--(instancetype)initWithPasswordType:(PasswordValidatorType)type;
+-(instancetype)initWithPasswordType:(ZYInputPasswordValidatorType)type;
 
 /**
  使用日期的验证类型初始化textField
@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param type 日期的类型
  @return self
  */
--(instancetype)initWithDateType:(DateValidatorType)type;
+-(instancetype)initWithDateType:(ZYInputDateValidatorType)type;
 /**
  验证输入的内容是否通过
  使用用例:
