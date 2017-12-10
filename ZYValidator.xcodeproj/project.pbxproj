@@ -34,6 +34,7 @@
 		5243CAD71FDD2B3D00B35C81 /* DateValidatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5243CAD61FDD2B3D00B35C81 /* DateValidatorTest.m */; };
 		5243CAD91FDD2B4C00B35C81 /* PhoneNumberValidatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5243CAD81FDD2B4C00B35C81 /* PhoneNumberValidatorTest.m */; };
 		5243CADB1FDD2B5700B35C81 /* URLValidatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5243CADA1FDD2B5700B35C81 /* URLValidatorTest.m */; };
+		5243CADD1FDD2F5400B35C81 /* UserNameValidatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5243CADC1FDD2F5300B35C81 /* UserNameValidatorTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		5243CAD61FDD2B3D00B35C81 /* DateValidatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateValidatorTest.m; sourceTree = "<group>"; };
 		5243CAD81FDD2B4C00B35C81 /* PhoneNumberValidatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneNumberValidatorTest.m; sourceTree = "<group>"; };
 		5243CADA1FDD2B5700B35C81 /* URLValidatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLValidatorTest.m; sourceTree = "<group>"; };
+		5243CADC1FDD2F5300B35C81 /* UserNameValidatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserNameValidatorTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 		5243CA841FDD169900B35C81 /* ZYValidatorTests */ = {
 			isa = PBXGroup;
 			children = (
+				5243CADC1FDD2F5300B35C81 /* UserNameValidatorTest.m */,
 				5243CAD61FDD2B3D00B35C81 /* DateValidatorTest.m */,
 				5243CAD41FDD2B2400B35C81 /* CarNumberValidatorTest.m */,
 				5243CAC41FDD1C2100B35C81 /* EmailValitorTest.m */,
@@ -381,6 +384,7 @@
 				5243CACB1FDD1C2100B35C81 /* PostCodeValidatorTest.m in Sources */,
 				5243CA861FDD169900B35C81 /* ZYValidatorTests.m in Sources */,
 				5243CAD91FDD2B4C00B35C81 /* PhoneNumberValidatorTest.m in Sources */,
+				5243CADD1FDD2F5400B35C81 /* UserNameValidatorTest.m in Sources */,
 				5243CACA1FDD1C2100B35C81 /* IDCardValidatorTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

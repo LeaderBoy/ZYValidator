@@ -26,8 +26,7 @@
  3、电信号段有133，153，177，180，181，189。
  */
 -(void)testPhone {
-    
-     UITextField*number = [[UITextField alloc]initWithValidatorType:ZYInputValidatorTypePhone];
+    UITextField*number = [[UITextField alloc]initWithValidatorType:ZYInputValidatorTypePhone];
     // false
     XCTAssertFalse([self validateWith:number]);
     
@@ -157,11 +156,11 @@
 }
 
 -(BOOL)validateWith:(UITextField *)textField {
-    NSError *error;
-    BOOL result = [textField validate:&error];
-    if (error) {
-        NSLog(@"%@",[error localizedDescription]);
-    }
+NSError *error;
+BOOL result = [textField validate:&error];
+if (error) {
+    NSLog(@"%@",[error localizedDescription]);
+}
     return result;
 }
 
