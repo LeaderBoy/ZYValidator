@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZYValidator"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "用于验证 用户名/密码/手机号/邮箱/身份证号码/日期/URL地址/车牌号 的格式"
 
   # This description is used to generate tags and improve search results.
@@ -88,7 +88,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "UITextField+ZYValidator", "UITextField+ZYValidator/**/*.{h,m}"
+  s.source_files  = "ZYValidator/ZYValidator", "ZYValidator/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
