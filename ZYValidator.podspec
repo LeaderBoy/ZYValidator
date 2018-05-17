@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZYValidator"
-  s.version      = "1.0.1"
+  s.version      = "1.0.3"
   s.summary      = "用于验证 用户名/密码/手机号/邮箱/身份证号码/日期/URL地址/车牌号 的格式"
 
   # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "用于验证 用户名/密码/手机号/邮箱/身份证号码/日期/URL地址/车牌号的格式 同时还可以验证具体的格式错误,比如至少一个大写"
+  s.description  = "用于验证 用户名/密码/手机号/邮箱/身份证号码/日期/URL地址/车牌号 的格式更新号段 移动:198 联通:166 电信:199"
 
   s.homepage     = "https://github.com/LeaderBoy/ZYValidator"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
