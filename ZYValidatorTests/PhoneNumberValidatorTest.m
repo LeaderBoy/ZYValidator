@@ -105,6 +105,9 @@
     
     number.text = @"18884783232";
     XCTAssertTrue([self validateWith:number]);
+    // 2018 - 5 - 17 增加198 号段
+    number.text = @"19884783232";
+    XCTAssertTrue([self validateWith:number]);
     
     // true - 联通
     number.text = @"13084783232";
@@ -134,6 +137,11 @@
     number.text = @"17684783232";
     XCTAssertTrue([self validateWith:number]);
     
+    // 2018 - 5 - 17 增加166 号段
+    number.text = @"16684783232";
+    XCTAssertTrue([self validateWith:number]);
+    
+    
     // true - 电信
     number.text = @"13384783232";
     XCTAssertTrue([self validateWith:number]);
@@ -152,15 +160,17 @@
     
     number.text = @"18984783232";
     XCTAssertTrue([self validateWith:number]);
-    
+    // 2018 - 5 - 17 增加199 号段
+    number.text = @"19984783232";
+    XCTAssertTrue([self validateWith:number]);
 }
 
 -(BOOL)validateWith:(UITextField *)textField {
-NSError *error;
-BOOL result = [textField validate:&error];
-if (error) {
-    NSLog(@"%@",[error localizedDescription]);
-}
+    NSError *error;
+    BOOL result = [textField validate:&error];
+    if (error) {
+        NSLog(@"%@",[error localizedDescription]);
+    }
     return result;
 }
 
@@ -181,3 +191,4 @@ if (error) {
 }
 
 @end
+

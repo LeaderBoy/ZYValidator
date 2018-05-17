@@ -12,8 +12,7 @@
 static NSString *const kPhoneNumberValidatorErrorEmpty = @"手机号为空";
 static NSString *const kPhoneNumberValidatorErrorFormat = @"手机号格式不正确";
 // 正则表达式
-static NSString *const kPhoneNumberValidatorDefault = @"^1(3[0-9]|4[57]|5[0-35-9]|8[0-9]|7[0678])\\d{8}$";
-
+static NSString *const kPhoneNumberValidatorDefault = @"^1(3[0-9]|4[57]|5[0-35-9]|6[6]|8[0-9]|9[89]|7[0678])\\d{8}$";
 @implementation ZYInputPhoneNumberValidator
 
 
