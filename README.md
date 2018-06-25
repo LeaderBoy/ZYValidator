@@ -4,7 +4,7 @@
 #### 安装
 在 podfile 中
 ```
-pod 'ZYValidator' 
+pod ‘ZYValidator’,’~> 1.0.4’ 
 ```
 在终端执行
 ```
